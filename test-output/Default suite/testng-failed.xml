@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing">
+        <methods>
+          <include name="log_In"/>
+          <include name="browser_quit"/>
+          <include name="Makeup_Product"/>
+          <include name="Payment_Method"/>
+          <include name="log_Out"/>
+          <include name="browser_Launch"/>
+          <include name="Browser"/>
+          <include name="Makeup_Remover_Product"/>
+          <include name="product_Click"/>
+          <include name="a_Session_Initiated"/>
+          <include name="setup"/>
+          <include name="Product_Page_TO_Cart"/>
+        </methods>
+      </class> <!-- NYKAA_TestNG.TestNG_Cross_Browser_Testing -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

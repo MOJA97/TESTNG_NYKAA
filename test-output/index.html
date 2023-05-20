@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite1" class="navigator-link">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite1" class="navigator-link ">
+                    <span>C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite1" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite1" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 16 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Makeup_Product">Makeup_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Makeup_Product">Makeup_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Makeup_Remover_Product">Makeup_Remover_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Makeup_Remover_Product">Makeup_Remover_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Payment_Method">Payment_Method</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Payment_Method">Payment_Method</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Product_Page_TO_Cart">Product_Page_TO_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="Product_Page_TO_Cart">Product_Page_TO_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="browser_Launch">browser_Launch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="browser_Launch">browser_Launch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="log_In">log_In</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="log_In">log_In</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="log_Out">log_Out</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="log_Out">log_Out</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="product_Click">product_Click</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="NYKAA_TestNG.TestNG_Cross_Browser_Testing" class="method navigator-link" hash-for-method="product_Click">product_Click</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">NYKAA_TestNG.TestNG_Cross_Browser_Testing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Makeup_Product">
+                  </a> <!-- Makeup_Product -->
+                  <span class="method-name">Makeup_Product</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf1e43a0bc129a60a1cd8edb9863186e, actions {actions=[org.openqa.selenium.interactions.Sequence@7dff6d05]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Javed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58081/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf1e43a0bc129a60a1cd8edb9863186e
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at NEW_PROJECT_Nykaa.Base_Class.moveTOelement(Base_Class.java:708)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Product(TestNG_Cross_Browser_Testing.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 64 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Makeup_Product">
+                  </a> <!-- Makeup_Product -->
+                  <span class="method-name">Makeup_Product</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [81178073-d12a-42a7-8509-2349dd0102db, actions {actions=[org.openqa.selenium.interactions.Sequence@5fac521d]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:22045, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8264, moz:profile: C:\Users\Javed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22045/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81178073-d12a-42a7-8509-2349dd0102db
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at NEW_PROJECT_Nykaa.Base_Class.moveTOelement(Base_Class.java:708)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Product(TestNG_Cross_Browser_Testing.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 64 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Makeup_Remover_Product">
+                  </a> <!-- Makeup_Remover_Product -->
+                  <span class="method-name">Makeup_Remover_Product</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Remover_Product(TestNG_Cross_Browser_Testing.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Makeup_Remover_Product">
+                  </a> <!-- Makeup_Remover_Product -->
+                  <span class="method-name">Makeup_Remover_Product</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Remover_Product(TestNG_Cross_Browser_Testing.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Payment_Method">
+                  </a> <!-- Payment_Method -->
+                  <span class="method-name">Payment_Method</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at NEW_PROJECT_Nykaa.Base_Class.click(Base_Class.java:120)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Payment_Method(TestNG_Cross_Browser_Testing.java:177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Payment_Method">
+                  </a> <!-- Payment_Method -->
+                  <span class="method-name">Payment_Method</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at NEW_PROJECT_Nykaa.Base_Class.click(Base_Class.java:120)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Payment_Method(TestNG_Cross_Browser_Testing.java:177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Product_Page_TO_Cart">
+                  </a> <!-- Product_Page_TO_Cart -->
+                  <span class="method-name">Product_Page_TO_Cart</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Product_Page_TO_Cart(TestNG_Cross_Browser_Testing.java:155)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Product_Page_TO_Cart">
+                  </a> <!-- Product_Page_TO_Cart -->
+                  <span class="method-name">Product_Page_TO_Cart</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Product_Page_TO_Cart(TestNG_Cross_Browser_Testing.java:155)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browser_Launch">
+                  </a> <!-- browser_Launch -->
+                  <span class="method-name">browser_Launch</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.getUrl(Base_Class.java:63)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_Launch(TestNG_Cross_Browser_Testing.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browser_Launch">
+                  </a> <!-- browser_Launch -->
+                  <span class="method-name">browser_Launch</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.getUrl(Base_Class.java:63)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_Launch(TestNG_Cross_Browser_Testing.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="log_In">
+                  </a> <!-- log_In -->
+                  <span class="method-name">log_In</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;a&apos; is required by @Test on method log_In but has not been marked @Optional or defined
+in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="log_In">
+                  </a> <!-- log_In -->
+                  <span class="method-name">log_In</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;a&apos; is required by @Test on method log_In but has not been marked @Optional or defined
+in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="log_Out">
+                  </a> <!-- log_Out -->
+                  <span class="method-name">log_Out</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowhandlingURL(Base_Class.java:220)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.log_Out(TestNG_Cross_Browser_Testing.java:206)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="log_Out">
+                  </a> <!-- log_Out -->
+                  <span class="method-name">log_Out</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandles()&quot; because &quot;NEW_PROJECT_Nykaa.Base_Class.driver&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowhandlingURL(Base_Class.java:220)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.log_Out(TestNG_Cross_Browser_Testing.java:206)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="product_Click">
+                  </a> <!-- product_Click -->
+                  <span class="method-name">product_Click</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])&quot; because &quot;je&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.scrollIntoView(Base_Class.java:387)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.product_Click(TestNG_Cross_Browser_Testing.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Product is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="product_Click">
+                  </a> <!-- product_Click -->
+                  <span class="method-name">product_Click</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])&quot; because &quot;je&quot; is null
+	at NEW_PROJECT_Nykaa.Base_Class.scrollIntoView(Base_Class.java:387)
+	at NYKAA_TestNG.TestNG_Cross_Browser_Testing.product_Click(TestNG_Cross_Browser_Testing.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Product is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;user&quot; value=&quot;itsmemojaved@gmail.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;NYKAA_TestNG.TestNG_Cross_Browser_Testing&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestFirefox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;NYKAA_TestNG.TestNG_Cross_Browser_Testing&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestFirefox --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestFirefox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Team Red</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">browser_Launch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">log_In</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">log_Out</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'log_Out')
+data.setCell(0, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(0, 3, 3014);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'log_Out')
+data.setCell(1, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(1, 3, 3004);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Makeup_Product')
+data.setCell(2, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(2, 3, 52);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Makeup_Remover_Product')
+data.setCell(3, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(3, 3, 48);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Makeup_Remover_Product')
+data.setCell(4, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(4, 3, 31);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Product_Page_TO_Cart')
+data.setCell(5, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(5, 3, 21);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Product_Page_TO_Cart')
+data.setCell(6, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(6, 3, 21);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'product_Click')
+data.setCell(7, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(7, 3, 19);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'browser_Launch')
+data.setCell(8, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(8, 3, 18);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'browser_Launch')
+data.setCell(9, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(9, 3, 7);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Makeup_Product')
+data.setCell(10, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(10, 3, 5);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'product_Click')
+data.setCell(11, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Payment_Method')
+data.setCell(12, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Payment_Method')
+data.setCell(13, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'log_In')
+data.setCell(14, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'log_In')
+data.setCell(15, 2, 'NYKAA_TestNG.TestNG_Cross_Browser_Testing')
+data.setCell(15, 3, 0);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">NYKAA_TestNG.TestNG_Cross_Browser_Testing</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">a_Session_Initiated</span>
+                <span class="method-start">7432 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browser_Launch</span>
+                <span class="method-start">7455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Makeup_Product</span>
+                <span class="method-start">7504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Makeup_Remover_Product</span>
+                <span class="method-start">7595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7647 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">product_Click</span>
+                <span class="method-start">7648 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Product_Page_TO_Cart</span>
+                <span class="method-start">7663 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Payment_Method</span>
+                <span class="method-start">7691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">7696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">log_Out</span>
+                <span class="method-start">7697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">10705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browser_quit</span>
+                <span class="method-start">10708 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">10946 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">a_Session_Initiated</span>
+                <span class="method-start">18874 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browser_Launch</span>
+                <span class="method-start">18875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">18890 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Makeup_Product</span>
+                <span class="method-start">18917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">18945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Makeup_Remover_Product</span>
+                <span class="method-start">18947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">18989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">product_Click</span>
+                <span class="method-start">18996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">19024 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Product_Page_TO_Cart</span>
+                <span class="method-start">19027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">19087 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Payment_Method</span>
+                <span class="method-start">19088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">19096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">log_Out</span>
+                <span class="method-start">19102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browser</span>
+                <span class="method-start">22119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browser_quit</span>
+                <span class="method-start">22120 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
