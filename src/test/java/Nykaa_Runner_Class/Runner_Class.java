@@ -118,7 +118,7 @@ public class Runner_Class extends Base_Class {
 		click(page.getProceedbtn());
 		
 		click(Spage.getAddress1());
-		clickElement(Spage.getPincode());
+		click(Spage.getPincode());
 		send_Values(Spage.getPincode(), "613009");
 		
 		click(Spage.getCheckbox());

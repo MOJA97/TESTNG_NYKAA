@@ -1,18 +1,15 @@
-package Nykaa_JUnit;
+package NYKAA_TestNG;
 
-import java.awt.AWTException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import NEW_PROJECT_Nykaa.Base_Class;
 import POM_Nykaa.Login_Page;
@@ -22,8 +19,8 @@ import POM_Nykaa.Product_Page;
 import POM_Nykaa.Shipping_Page;
 import POM_Nykaa.User_Homepage;
 
-public class JUnit_Nykaa extends Base_Class {
-
+public class Parallel_Chrome extends Base_Class {
+	
 	public static WebDriver driver = browser_Launch("chrome");
 
 	static Login_Page login = new Login_Page(driver);
@@ -34,25 +31,25 @@ public class JUnit_Nykaa extends Base_Class {
 	static Logout_Page Lpage = new Logout_Page(driver);
 	
 	
-	@BeforeClass
-	public static void browser_Launch() {
+	@BeforeSuite( groups = "Team Red")
+	public void a_Session_Initiated() {
+
+		System.out.println("Compiling source code started");
+		
+	}
+	
+
+	@Test(priority = -11)
+	public void browser_Launch() {
 
 		getUrl("https://www.nykaa.com/auth/verify?ptype=auth&redirect=%2F");
+		System.out.println("Browser launched");
 		window_Manage("maximize");
-		System.out.println("Nykaa browser launched and maximized");
+		System.out.println("Window Maximized");
 	}
-
-	@AfterClass
-	public static void browser_Closed() {
-		
-		implicitly_Wait(7);
-		close();
-	}
-
-	@Before
-	public void Login_Page() throws IOException {
-
-		implicitly_Wait(5);
+	
+	@Test(priority = -9)
+	private void log_In() throws IOException {
 
 		send_Values(login.getLogin(), "itsmemojaved@gmail.com");
 		System.out.println("email has been entered");
@@ -66,7 +63,7 @@ public class JUnit_Nykaa extends Base_Class {
 
 		// ENter your OTP
 		Scanner s = new Scanner(System.in);
-		System.out.println("enter your OTP::");
+		System.out.println("Enter your OTP:");
 		String otp = s.next();
 		WebElement OTPNo = driver.findElement(By.xpath("//input[@name='otpValue']"));
 		click(OTPNo);
@@ -75,29 +72,36 @@ public class JUnit_Nykaa extends Base_Class {
 		verifyBTN.click();
 
 		System.out.println("OTP has been entered");
-
 	}
 	
-	@Test
-	public void A_product_Purchase() throws IOException, AWTException {
+	@Test(priority = -3)
+	private void Makeup_Product() throws IOException {
 
 		moveTOelement(driver, Uhp.getMakeup());
 		WebElement makeupremover = driver.findElement(By.linkText("Makeup Remover"));
 		implicitly_Wait(4);
 		screenshot(driver, "C:\\Users\\Javed\\eclipse-workspace\\maven\\Screenshot/makeuppage.png");
 		makeupremover.click();
-		System.out.println("Browser open a makeup remover window tab");
-		
+		System.err.println("Browser open a makeup remover window tab");
+	}
+	
+	@Test(priority = -2)
+	
+	private void Makeup_Remover_Product() throws IOException {
+
 		String title = driver.getTitle();
 		multiple_WindowHandling(title);
 		screenshot(driver, "C:\\Users\\Javed\\eclipse-workspace\\maven\\Screenshot/makeupremoverPAGE.png");
 		System.out.println("Driver moved to newly opened window");
 
+		
+	}
+	
+	@Test(priority = -1, description = "Product is clicked")
+	
+	private void product_Click() {
+		
 		scrollIntoView(Mrp.getProductclick());
-//		scroll(Mrp.getProductclick());
-		
-		System.out.println("Page has been scrolled to find the product");
-		
 		implicitly_Wait(5);
 		moveToElement(Mrp.getProductclick());
 		List<WebElement> product = driver.findElements(By.xpath("//div[@class='css-d5z3ro']"));
@@ -112,18 +116,19 @@ public class JUnit_Nykaa extends Base_Class {
 			
 			
 		}
-		
-//		moveToElement(Mrp.getProductclick());
-//		right_Click(Mrp.getProductclick());
-//		down_Enter();
 		System.out.println("Product has been found and clicked");
+	}
+	
+	@Test(priority = 0)
+	
+	private void Product_Page_TO_Cart() throws IOException {
 		
 		String title2 = driver.getTitle();
 		multiple_WindowHandling(title2);
 		screenshot(driver, "C:\\Users\\Javed\\eclipse-workspace\\maven\\Screenshot/productpage.png");
 		System.out.println("moved to newly opened window");
 		
-		//add product into cart
+		
 		click(page.getAddtobag());
 		implicitly_Wait(2);
 		click(page.getCart());
@@ -131,22 +136,37 @@ public class JUnit_Nykaa extends Base_Class {
 		implicitly_Wait(3);
 		screenshot(driver, "C:\\Users\\Javed\\eclipse-workspace\\maven\\Screenshot/cartFrame.png");
 		
-		//switching frame
+
 		iframes(page.getFrameSwitch());
 		click(page.getProceedbtn());
 		
+	}
+	
+	@Test(priority = 1)
+	
+	private void Payment_Method() throws IOException {
+
+		waitExp(Spage.getAddress1(), 10);
 		click(Spage.getAddress1());
-		clickElement(Spage.getPincode());
+		waitExp(Spage.getPincode(), 10);
+		click(Spage.getPincode());
+		
+		waitExp(Spage.getPincode(), 10);
 		send_Values(Spage.getPincode(), "613009");
 		
+		waitExp(Spage.getCheckbox(), 10);
 		click(Spage.getCheckbox());
 		
+		waitExp(Spage.getName(), 10);
 		click(Spage.getName());
 		send_Values(Spage.getName(), "Mohammed Javed");
+		waitExp(Spage.getPhone(), 10);
 		click(Spage.getPhone());
 		send_Values(Spage.getPhone(), "9342375858");
+		waitExp(Spage.getEmailID(), 10);
 		click(Spage.getEmailID());
 		send_Values(Spage.getEmailID(), "itsmemojaved@gmail.com");
+	
 		implicitly_Wait(5);
 		send_Values(Spage.getHouseno(), "98");
 		send_Values(Spage.getAddress(), "RajaRajan cholan nagar, near Bigtemple,");
@@ -160,9 +180,9 @@ public class JUnit_Nykaa extends Base_Class {
 		
 	}
 	
-	@After
-	public void logOut() throws IOException, InterruptedException {
-		
+	@Test(priority = 8, groups = "Team Red")
+	private void log_Out() throws Exception{
+
 		
 		Thread.sleep(3000);
 		multiple_WindowhandlingURL("https://www.nykaa.com/");
@@ -172,83 +192,17 @@ public class JUnit_Nykaa extends Base_Class {
 		click(Lpage.getLogoutPopup());
 		System.out.println("Profile has been logged out");
 		
-		
-		
-	
+		window_Manage("minimize");
+		System.out.println("Browser maximize");
 	}
+	
+	
+	@AfterSuite(groups = "Team Red")
+	private void browser_quit() {
+
+		browser_Close();
+	}
+	
 	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- * 	multiple_WindowhandlingURL("https://www.nykaa.com/");
-		moveToElement(Lpage.getProfileBTN());
-		moveToElement(Lpage.getLogoutBTN());
-		
-		List<WebElement> logout = driver.findElements(By.xpath("//div[@class='  partial-modal  css-1pqs92a e1j92jav0']//descendant::div"));
-		for (WebElement click: logout) {
-			if (click.getText().contains("Logout")) {
-				
-				WebElement btn = driver.findElement(By.xpath("//span[text()='Logout']"));
-				btn.click();
-				
-			}
-			
-		}
-		*/

@@ -1,6 +1,7 @@
 package NEW_PROJECT_Nykaa;
 
 import java.awt.AWTException;
+
 import java.awt.Robot;
 import java.awt.dnd.DragSourceDropEvent;
 import java.awt.event.KeyEvent;
@@ -11,17 +12,11 @@ import java.sql.Driver;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -33,6 +28,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -45,11 +41,11 @@ public class Base_Class {
 
 	public static WebDriver browser_Launch(String browsername) {
 
-		if (browsername == "chrome") {
+		if (browsername.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\Javed\\eclipse-workspace\\maven\\Chrome_Driver\\chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (browsername == "firefox") {
+		} else if (browsername.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Users\\Javed\\eclipse-workspace\\maven\\firefox_Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -127,7 +123,7 @@ public class Base_Class {
 
 	public static void implicitly_Wait(int sec) {
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
+		driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
 	}
 
 	public static void current_Title() {
@@ -161,12 +157,7 @@ public class Base_Class {
 		element.sendKeys(Values);
 	}
 
-	public static void pageLoadout_TimeDuration() {
-
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3000));
-
-	}
-
+	
 	public static void clickon_Element(WebElement element) {
 		element.click();
 
@@ -227,7 +218,7 @@ public class Base_Class {
 		}
 		}
 
-	public static String get_Particular_Data(String path) throws IOException, InvalidFormatException {
+	/*public static String get_Particular_Data(String path) throws IOException, InvalidFormatException {
 
 		File f = new File("C:\\Users\\Javed\\eclipse-workspace\\Project_Maven\\Project_Name\\Get particular data.xlsx");
 
@@ -345,12 +336,11 @@ public class Base_Class {
 
 		driver.close();
 
-	}
+	}*/
 
 	// mouse over
 
 	public static void mouseOver(WebElement element) {
-		waitforvisibilityofelment(element);
 		try {
 			Actions ac = new Actions(driver);
 
@@ -404,7 +394,6 @@ public class Base_Class {
 	// send keys
 
 	public static void setkey(WebElement element, String value) throws Exception {
-		waitforvisibilityofelment(element);
 		try {
 			if (elementisDisplayed(element) && elementisenabled(element)) {
 				element.clear();
@@ -452,16 +441,16 @@ public class Base_Class {
 
 	// to click
 
-	public static void clickElement(WebElement element) {
-		try {
-			waitforvisibilityofelment(element);
-			element.click();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	}
+//	public static void clickElement(WebElement element) {
+//		try {
+//			waitforvisibilityofelment(element);
+//			element.click();
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//
+//	}
 
 	// navigate to
 
@@ -615,8 +604,8 @@ public class Base_Class {
 	}
 
 	// quit
-	public static void quitt() {
-		driver.quit();
+	public static void browser_Close() {
+		driver.close();
 	}
 
 	// double click
@@ -675,16 +664,29 @@ public class Base_Class {
 
 	// explicit wait
 
-	public static void waitforvisibilityofelment(WebElement element) {
+	public static void waitExp(WebElement element, long sec) {
 
 		try {
-			WebDriverWait wb = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wb = new WebDriverWait(driver, sec);
 			wb.until(ExpectedConditions.visibilityOf(element));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
+	}
+	
+	//explicit Wait
+	
+	
+	public static void wait_Explicit() {
+
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+			       .withTimeout(30, TimeUnit.SECONDS)
+			       .pollingEvery(5, TimeUnit.SECONDS)
+			       .ignoring(NoSuchElementException.class);
+		
+		 
 	}
 
 	// is displayed

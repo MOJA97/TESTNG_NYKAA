@@ -6,7 +6,6 @@
   <test name="TestChrome">
   
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="user" value="itsmemojaved@gmail.com"></parameter>
   
     <classes>
       <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
@@ -17,6 +16,7 @@
   <test name="TestFirefox">
   
   <parameter name="browser" value="firefox"></parameter>
+  
     <classes>
       <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
     </classes>

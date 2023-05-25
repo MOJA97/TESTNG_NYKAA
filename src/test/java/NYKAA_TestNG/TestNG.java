@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,14 +39,15 @@ public class TestNG extends Base_Class {
 	static Logout_Page Lpage = new Logout_Page(driver);
 	
 	
-	@BeforeClass( groups = "Team Red")
+	@BeforeSuite( groups = "Team Red")
 	public void a_Session_Initiated() {
 
 		System.out.println("Compiling source code started");
+		
 	}
 	
 
-	@Test(priority = -11, groups = "Team Red")
+	@Test(priority = -11)
 	public void browser_Launch() {
 
 		getUrl("https://www.nykaa.com/auth/verify?ptype=auth&redirect=%2F");
@@ -56,7 +56,7 @@ public class TestNG extends Base_Class {
 		System.out.println("Window Maximized");
 	}
 	
-	@Test(priority = -9, groups = "Team Red")
+	@Test(priority = -9)
 	private void log_In() throws IOException {
 
 		send_Values(login.getLogin(), "itsmemojaved@gmail.com");
@@ -155,7 +155,7 @@ public class TestNG extends Base_Class {
 	private void Payment_Method() throws IOException {
 
 		click(Spage.getAddress1());
-		clickElement(Spage.getPincode());
+		click(Spage.getPincode());
 		send_Values(Spage.getPincode(), "613009");
 		
 		click(Spage.getCheckbox());
@@ -196,10 +196,10 @@ public class TestNG extends Base_Class {
 	}
 	
 	
-	@AfterClass(groups = "Team Red")
+	@AfterSuite(groups = "Team Red")
 	private void browser_quit() {
 
-		browser_Close();
+		driver.close();
 	}
 	
 	

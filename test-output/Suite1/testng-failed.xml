@@ -3,7 +3,6 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestChrome(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="user" value="itsmemojaved@gmail.com"/>
     <classes>
       <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing">
         <methods>
@@ -17,7 +16,6 @@
           <include name="Makeup_Remover_Product"/>
           <include name="product_Click"/>
           <include name="a_Session_Initiated"/>
-          <include name="setup"/>
           <include name="Product_Page_TO_Cart"/>
         </methods>
       </class> <!-- NYKAA_TestNG.TestNG_Cross_Browser_Testing -->
@@ -38,7 +36,6 @@
           <include name="Makeup_Remover_Product"/>
           <include name="product_Click"/>
           <include name="a_Session_Initiated"/>
-          <include name="setup"/>
           <include name="Product_Page_TO_Cart"/>
         </methods>
       </class> <!-- NYKAA_TestNG.TestNG_Cross_Browser_Testing -->

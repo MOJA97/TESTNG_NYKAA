@@ -1,10 +1,5 @@
 package NYKAA_TestNG;
 
-import org.testng.annotations.Parameters;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -12,15 +7,8 @@ import java.util.Scanner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v109.browser.Browser;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import NEW_PROJECT_Nykaa.Base_Class;
@@ -31,9 +19,9 @@ import POM_Nykaa.Product_Page;
 import POM_Nykaa.Shipping_Page;
 import POM_Nykaa.User_Homepage;
 
-public class TestNG_Cross_Browser_Testing extends Base_Class {
+public class Parallel_Firefox extends Base_Class {
 	
-	public static WebDriver driver;
+	public static WebDriver driver =  browser_Launch("firefox");
 
 	static Login_Page login = new Login_Page(driver);
 	static User_Homepage Uhp = new User_Homepage(driver);
@@ -43,43 +31,28 @@ public class TestNG_Cross_Browser_Testing extends Base_Class {
 	static Logout_Page Lpage = new Logout_Page(driver);
 	
 	
-	@BeforeClass(groups = "Team Red")
+	@BeforeSuite( groups = "Team Red")
 	public void a_Session_Initiated() {
 
 		System.out.println("Compiling source code started");
-	}
-	
-	@BeforeTest
-	@Parameters ({"browser"})
-	public void setup(String browser) {
-
-		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Javed\\eclipse-workspace\\maven\\Chrome_Driver\\chromedriver.exe");
-			driver = new ChromeDriver();
-			
-		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\Javed\\eclipse-workspace\\maven\\firefox_Driver\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
+		
 	}
 	
 
-	@Test(priority = -11, groups = "Team Red")
+	@Test(priority = -11)
 	public void browser_Launch() {
-
+		
+		
 		getUrl("https://www.nykaa.com/auth/verify?ptype=auth&redirect=%2F");
 		System.out.println("Browser launched");
 		window_Manage("maximize");
 		System.out.println("Window Maximized");
 	}
 	
-	@Parameters({"a"})
-	@Test(priority = -9, groups = "Team Red")
-	private void log_In(String username) throws IOException {
+	@Test(priority = -9)
+	private void log_In() throws IOException {
 
-		send_Values(login.getLogin(), username);
+		send_Values(login.getLogin(), "itsmemojaved@gmail.com");
 		System.out.println("email has been entered");
 		implicitly_Wait(5);
 		screenshot(driver, "C:\\Users\\Javed\\eclipse-workspace\\maven\\Screenshot/loginpage.png");
@@ -175,7 +148,7 @@ public class TestNG_Cross_Browser_Testing extends Base_Class {
 	private void Payment_Method() throws IOException {
 
 		click(Spage.getAddress1());
-		clickElement(Spage.getPincode());
+		click(Spage.getPincode());
 		send_Values(Spage.getPincode(), "613009");
 		
 		click(Spage.getCheckbox());
@@ -201,6 +174,7 @@ public class TestNG_Cross_Browser_Testing extends Base_Class {
 	
 	@Test(priority = 8, groups = "Team Red")
 	private void log_Out() throws Exception{
+
 		
 		Thread.sleep(3000);
 		multiple_WindowhandlingURL("https://www.nykaa.com/");
@@ -215,19 +189,11 @@ public class TestNG_Cross_Browser_Testing extends Base_Class {
 	}
 	
 	
-	@AfterClass(groups = "Team Red")
+	@AfterSuite(groups = "Team Red")
 	private void browser_quit() {
 
-		browser_Close();
+		browser_quit();
 	}
-	
-	@AfterMethod(description = "Browser has been choosen succesfully")
-	private void Browser() {
-		// TODO Auto-generated method stub
-
-	}
-	
-	
 	
 	
 

@@ -1,1019 +1,1086 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="0" failed="16" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-19T14:35:44 IST" name="Suite1" finished-at="2023-05-19T14:36:06 IST" duration-ms="22153">
+  <suite started-at="2023-05-25T09:05:33 IST" name="Default suite" finished-at="2023-05-25T09:06:48 IST" duration-ms="74362">
     <groups>
       <group name="Team Red">
-        <method signature="TestNG_Cross_Browser_Testing.browser_Launch()[pri:-11, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" name="browser_Launch" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
-        <method signature="TestNG_Cross_Browser_Testing.log_In(java.lang.String)[pri:-9, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" name="log_In" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
-        <method signature="TestNG_Cross_Browser_Testing.log_Out()[pri:8, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" name="log_Out" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
-        <method signature="TestNG_Cross_Browser_Testing.browser_Launch()[pri:-11, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" name="browser_Launch" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
-        <method signature="TestNG_Cross_Browser_Testing.log_In(java.lang.String)[pri:-9, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" name="log_In" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
-        <method signature="TestNG_Cross_Browser_Testing.log_Out()[pri:8, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" name="log_Out" class="NYKAA_TestNG.TestNG_Cross_Browser_Testing"/>
+        <method signature="TestNG.log_Out()[pri:8, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" name="log_Out" class="NYKAA_TestNG.TestNG"/>
       </group> <!-- Team Red -->
     </groups>
-    <test started-at="2023-05-19T14:35:44 IST" name="TestChrome" finished-at="2023-05-19T14:35:55 IST" duration-ms="10741">
-      <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:44 IST" name="setup" finished-at="2023-05-19T14:35:51 IST" duration-ms="7392" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="a_Session_Initiated()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:51 IST" name="a_Session_Initiated" finished-at="2023-05-19T14:35:51 IST" duration-ms="0" status="PASS">
+    <test started-at="2023-05-25T09:05:33 IST" name="Default test" finished-at="2023-05-25T09:06:48 IST" duration-ms="74362">
+      <class name="NYKAA_TestNG.TestNG">
+        <test-method is-config="true" signature="a_Session_Initiated()[pri:0, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:05:33 IST" name="a_Session_Initiated" finished-at="2023-05-25T09:05:33 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_Session_Initiated -->
-        <test-method signature="browser_Launch()[pri:-11, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="browser_Launch" finished-at="2023-05-19T14:35:52 IST" duration-ms="18" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.getUrl(Base_Class.java:63)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_Launch(TestNG_Cross_Browser_Testing.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="browser_Launch()[pri:-11, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:05:33 IST" name="browser_Launch" finished-at="2023-05-25T09:05:41 IST" duration-ms="7900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_Launch -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="log_In(java.lang.String)[pri:-9, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="log_In" finished-at="2023-05-19T14:35:52 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'a' is required by @Test on method log_In but has not been marked @Optional or defined
-in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'a' is required by @Test on method log_In but has not been marked @Optional or defined
-in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="log_In()[pri:-9, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:05:41 IST" name="log_In" finished-at="2023-05-25T09:05:59 IST" duration-ms="17481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_In -->
-        <test-method signature="Makeup_Product()[pri:-3, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Makeup_Product" finished-at="2023-05-19T14:35:52 IST" duration-ms="52" status="FAIL">
-          <exception class="org.openqa.selenium.json.JsonException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cf1e43a0bc129a60a1cd8edb9863186e, actions {actions=[org.openqa.selenium.interactions.Sequence@7dff6d05]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Javed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58081/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf1e43a0bc129a60a1cd8edb9863186e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cf1e43a0bc129a60a1cd8edb9863186e, actions {actions=[org.openqa.selenium.interactions.Sequence@7dff6d05]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Javed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58081/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf1e43a0bc129a60a1cd8edb9863186e
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
-at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-at org.openqa.selenium.json.Json.toJson(Json.java:42)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at NEW_PROJECT_Nykaa.Base_Class.moveTOelement(Base_Class.java:708)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Product(TestNG_Cross_Browser_Testing.java:108)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
-at org.openqa.selenium.json.Json.toJson(Json.java:40)
-... 38 more
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-... 59 more
-Caused by: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
-at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
-at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-... 64 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.json.JsonException -->
+        <test-method signature="Makeup_Product()[pri:-3, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:05:59 IST" name="Makeup_Product" finished-at="2023-05-25T09:06:14 IST" duration-ms="14905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Makeup_Product -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Makeup_Remover_Product()[pri:-2, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Makeup_Remover_Product" finished-at="2023-05-19T14:35:52 IST" duration-ms="48" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Remover_Product(TestNG_Cross_Browser_Testing.java:121)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="Makeup_Remover_Product()[pri:-2, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:14 IST" name="Makeup_Remover_Product" finished-at="2023-05-25T09:06:17 IST" duration-ms="3418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Makeup_Remover_Product -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="product_Click()[pri:-1, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="product_Click" description="Product is clicked" finished-at="2023-05-19T14:35:52 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "je" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "je" is null
-at NEW_PROJECT_Nykaa.Base_Class.scrollIntoView(Base_Class.java:387)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.product_Click(TestNG_Cross_Browser_Testing.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="product_Click()[pri:-1, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:17 IST" name="product_Click" description="Product is clicked" finished-at="2023-05-25T09:06:24 IST" duration-ms="7269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_Click -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Product_Page_TO_Cart()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Product_Page_TO_Cart" finished-at="2023-05-19T14:35:52 IST" duration-ms="21" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Product_Page_TO_Cart(TestNG_Cross_Browser_Testing.java:155)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="Product_Page_TO_Cart()[pri:0, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:24 IST" name="Product_Page_TO_Cart" finished-at="2023-05-25T09:06:36 IST" duration-ms="11836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Product_Page_TO_Cart -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Payment_Method()[pri:1, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Payment_Method" finished-at="2023-05-19T14:35:52 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at NEW_PROJECT_Nykaa.Base_Class.click(Base_Class.java:120)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Payment_Method(TestNG_Cross_Browser_Testing.java:177)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="Payment_Method()[pri:1, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:36 IST" name="Payment_Method" finished-at="2023-05-25T09:06:42 IST" duration-ms="5824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Payment_Method -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="log_Out()[pri:8, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:52 IST" name="log_Out" finished-at="2023-05-19T14:35:55 IST" duration-ms="3004" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowhandlingURL(Base_Class.java:220)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.log_Out(TestNG_Cross_Browser_Testing.java:206)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="log_Out()[pri:8, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:42 IST" name="log_Out" finished-at="2023-05-25T09:06:48 IST" duration-ms="5556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_Out -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:55 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:35:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method is-config="true" signature="browser_quit()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@6f204a1a]" started-at="2023-05-19T14:35:55 IST" name="browser_quit" finished-at="2023-05-19T14:35:55 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
+        <test-method is-config="true" signature="browser_quit()[pri:0, instance:NYKAA_TestNG.TestNG@2e5c7f0b]" started-at="2023-05-25T09:06:48 IST" name="browser_quit" finished-at="2023-05-25T09:06:48 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.StackOverflowError">
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.browser_Close(Base_Class.java:346)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_quit(TestNG_Cross_Browser_Testing.java:221)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.StackOverflowError
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
+at NYKAA_TestNG.TestNG.browser_quit(TestNG.java:202)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.StackOverflowError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_quit -->
-      </class> <!-- NYKAA_TestNG.TestNG_Cross_Browser_Testing -->
-    </test> <!-- TestChrome -->
-    <test started-at="2023-05-19T14:35:55 IST" name="TestFirefox" finished-at="2023-05-19T14:36:06 IST" duration-ms="11200">
-      <class name="NYKAA_TestNG.TestNG_Cross_Browser_Testing">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:35:55 IST" name="setup" finished-at="2023-05-19T14:36:03 IST" duration-ms="7927" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="a_Session_Initiated()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="a_Session_Initiated" finished-at="2023-05-19T14:36:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- a_Session_Initiated -->
-        <test-method signature="browser_Launch()[pri:-11, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="browser_Launch" finished-at="2023-05-19T14:36:03 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.getUrl(Base_Class.java:63)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_Launch(TestNG_Cross_Browser_Testing.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser_Launch -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="log_In(java.lang.String)[pri:-9, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="log_In" finished-at="2023-05-19T14:36:03 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'a' is required by @Test on method log_In but has not been marked @Optional or defined
-in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'a' is required by @Test on method log_In but has not been marked @Optional or defined
-in C:\Users\Javed\eclipse-workspace\maven\testngCrossBrowser.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_In -->
-        <test-method signature="Makeup_Product()[pri:-3, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Makeup_Product" finished-at="2023-05-19T14:36:03 IST" duration-ms="5" status="FAIL">
-          <exception class="org.openqa.selenium.json.JsonException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [81178073-d12a-42a7-8509-2349dd0102db, actions {actions=[org.openqa.selenium.interactions.Sequence@5fac521d]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:22045, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8264, moz:profile: C:\Users\Javed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22045/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81178073-d12a-42a7-8509-2349dd0102db]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [81178073-d12a-42a7-8509-2349dd0102db, actions {actions=[org.openqa.selenium.interactions.Sequence@5fac521d]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:22045, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8264, moz:profile: C:\Users\Javed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:22045/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81178073-d12a-42a7-8509-2349dd0102db
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
-at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-at org.openqa.selenium.json.Json.toJson(Json.java:42)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at NEW_PROJECT_Nykaa.Base_Class.moveTOelement(Base_Class.java:708)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Product(TestNG_Cross_Browser_Testing.java:108)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
-at org.openqa.selenium.json.Json.toJson(Json.java:40)
-... 38 more
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-... 59 more
-Caused by: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
-at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
-at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-... 64 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.json.JsonException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Makeup_Product -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Makeup_Remover_Product()[pri:-2, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Makeup_Remover_Product" finished-at="2023-05-19T14:36:03 IST" duration-ms="31" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Makeup_Remover_Product(TestNG_Cross_Browser_Testing.java:121)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Makeup_Remover_Product -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="product_Click()[pri:-1, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="product_Click" description="Product is clicked" finished-at="2023-05-19T14:36:03 IST" duration-ms="19" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "je" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "je" is null
-at NEW_PROJECT_Nykaa.Base_Class.scrollIntoView(Base_Class.java:387)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.product_Click(TestNG_Cross_Browser_Testing.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- product_Click -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Product_Page_TO_Cart()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Product_Page_TO_Cart" finished-at="2023-05-19T14:36:03 IST" duration-ms="21" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowHandling(Base_Class.java:200)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Product_Page_TO_Cart(TestNG_Cross_Browser_Testing.java:155)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Product_Page_TO_Cart -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="Payment_Method()[pri:1, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Payment_Method" finished-at="2023-05-19T14:36:03 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at NEW_PROJECT_Nykaa.Base_Class.click(Base_Class.java:120)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.Payment_Method(TestNG_Cross_Browser_Testing.java:177)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Payment_Method -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:03 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method signature="log_Out()[pri:8, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:03 IST" name="log_Out" finished-at="2023-05-19T14:36:06 IST" duration-ms="3014" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.multiple_WindowhandlingURL(Base_Class.java:220)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.log_Out(TestNG_Cross_Browser_Testing.java:206)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_Out -->
-        <test-method is-config="true" signature="Browser()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:06 IST" name="Browser" description="Browser has been choosen succesfully" finished-at="2023-05-19T14:36:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser -->
-        <test-method is-config="true" signature="browser_quit()[pri:0, instance:NYKAA_TestNG.TestNG_Cross_Browser_Testing@387a8303]" started-at="2023-05-19T14:36:06 IST" name="browser_quit" finished-at="2023-05-19T14:36:06 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "NEW_PROJECT_Nykaa.Base_Class.driver" is null
-at NEW_PROJECT_Nykaa.Base_Class.browser_Close(Base_Class.java:346)
-at NYKAA_TestNG.TestNG_Cross_Browser_Testing.browser_quit(TestNG_Cross_Browser_Testing.java:221)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser_quit -->
-      </class> <!-- NYKAA_TestNG.TestNG_Cross_Browser_Testing -->
-    </test> <!-- TestFirefox -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- NYKAA_TestNG.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
